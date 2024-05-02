@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1714679399,verilog,,,,clk_wiz_0,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1714679399,verilog,,C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sim_1/new/testbench.sv,1714683918,systemVerilog,,,,testbench,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/Common.vhd,1714431285,vhdl,C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/SDCard.vhd,,,common,,,,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/SDCard.vhd,1714682277,vhdl,,,,sdcardctrl;sdcardpckg,,,,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/audio_read_playback_top.sv,1714684199,systemVerilog,,C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv,,audio_read_playback_top,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/pwm.sv,1714431104,systemVerilog,,C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv,,pwm,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv,1714431105,systemVerilog,,C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sim_1/new/testbench.sv,,sdcard_init,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/design_source/HexDriver.sv,1707024284,systemVerilog,,C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/audio_read_playback_top.sv,,HexDriver,,uvm,../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0,,,,,

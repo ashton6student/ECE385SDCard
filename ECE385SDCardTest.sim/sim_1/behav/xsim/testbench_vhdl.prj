@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/Common.vhd" \
+"../../../../ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/SDCard.vhd" \
+
+# Do not sort compile order
+nosort

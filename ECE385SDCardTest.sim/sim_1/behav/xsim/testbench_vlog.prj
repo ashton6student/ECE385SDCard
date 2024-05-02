@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0" \
+"../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0" \
+"../../../../ECE385SDCardTest.srcs/sources_1/imports/design_source/HexDriver.sv" \
+"../../../../ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/audio_read_playback_top.sv" \
+"../../../../ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv" \
+"../../../../ECE385SDCardTest.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
