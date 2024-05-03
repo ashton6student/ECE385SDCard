@@ -106,6 +106,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Final Project/sync.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../sync.sv"/>
+          <Attr Name="ImportTime" Val="1714720844"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/FinalFiles/Common.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../FinalFiles/Common.vhd"/>

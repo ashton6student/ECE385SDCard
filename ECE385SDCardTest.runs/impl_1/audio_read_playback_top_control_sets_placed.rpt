@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Fri May  3 01:07:37 2024
+| Date         : Fri May  3 02:55:38 2024
 | Host         : TRON running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file audio_read_playback_top_control_sets_placed.rpt
 | Design       : audio_read_playback_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    25 |
-|    Minimum number of control sets                        |    25 |
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    66 |
+| Unused register locations in slices containing registers |    71 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    25 |
+| Total control sets |    26 |
 | >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     5 |
-| >= 6 to < 8        |     3 |
-| >= 8 to < 10       |     8 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     9 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     5 |
+| >= 16              |     6 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               8 |            7 |
+| No           | No                    | No                     |              12 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              74 |           23 |
-| Yes          | No                    | No                     |              88 |           41 |
+| No           | Yes                   | No                     |              73 |           21 |
+| Yes          | No                    | No                     |              93 |           36 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             100 |           30 |
+| Yes          | Yes                   | No                     |             111 |           32 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,31 +73,32 @@ Table of Contents
 +------------------------+----------------------------------------+----------------------------------------------+------------------+----------------+--------------+
 |      Clock Signal      |              Enable Signal             |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
 +------------------------+----------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/byteCnt_v[9]_i_1_n_0  | SD_card/m_sdcard/byteCnt_v[5]_i_1_n_0        |                1 |              1 |         1.00 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/cs_bo11_out           |                                              |                1 |              1 |         1.00 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/mosi_o5_out           |                                              |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG         |                                        |                                              |                1 |              1 |         1.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/byteCnt_v[9]_i_1_n_0  |                                              |                3 |              4 |         1.33 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/rtnState_v[3]_i_1_n_0 |                                              |                2 |              4 |         2.00 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/tx_v[47]_i_1_n_0      |                                              |                1 |              4 |         4.00 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/tx_v[47]_i_1_n_0      | SD_card/m_sdcard/tx_v[43]_i_1_n_0            |                2 |              4 |         2.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/state_v[4]_i_1_n_0    | reset_IBUF                                   |                5 |              5 |         1.00 |
-|  clk_wiz/inst/clk_out1 |                                        | SD_card/m_sdcard/sclkPhaseTimer_v[5]_i_1_n_0 |                3 |              6 |         2.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/byteCnt_v[9]_i_1_n_0  | SD_card/m_sdcard/byteCnt_v[8]_i_1_n_0        |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG         |                                        |                                              |                2 |              5 |         2.50 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/state_v[4]_i_1_n_0    | button_sync[0]/q_reg_0                       |                4 |              5 |         1.25 |
+|  clk_wiz/inst/clk_out1 |                                        | SD_card/m_sdcard/sclkPhaseTimer_v[5]_i_1_n_0 |                2 |              6 |         3.00 |
 |  clk_wiz/inst/clk_out1 |                                        |                                              |                6 |              7 |         1.17 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/data_o[7]_i_1_n_0     |                                              |                2 |              8 |         4.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/error_o[15]_i_2_n_0   | SD_card/m_sdcard/error_o[15]_i_1_n_0         |                2 |              8 |         4.00 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/bitCnt_v[7]_i_1_n_0   |                                              |                4 |              8 |         2.00 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/data_o[7]_i_1_n_0     |                                              |                1 |              8 |         8.00 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/error_o[15]_i_2_n_0   | SD_card/m_sdcard/error_o[15]_i_1_n_0         |                1 |              8 |         8.00 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/error_o[7]_i_2_n_0    | SD_card/m_sdcard/error_o[7]_i_1_n_0          |                2 |              8 |         4.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/rx_v[7]_i_1_n_0       |                                              |                4 |              8 |         2.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/E[0]                  | reset_IBUF                                   |                2 |              8 |         4.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/busy_o_reg_0[1]       | reset_IBUF                                   |                2 |              8 |         4.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/busy_o_reg_0[0]       | reset_IBUF                                   |                2 |              8 |         4.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/bitCnt_v[7]_i_1_n_0   |                                              |                6 |              8 |         1.33 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/addr_v_0              |                                              |                5 |             11 |         2.20 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/rx_v[7]_i_1_n_0       |                                              |                3 |              8 |         2.67 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/E[0]                  | button_sync[0]/q_reg_0                       |                3 |              8 |         2.67 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/busy_o_reg_0[0]       | button_sync[0]/q_reg_0                       |                2 |              8 |         4.00 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/busy_o_reg_0[1]       | button_sync[0]/q_reg_0                       |                2 |              8 |         4.00 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/byteCnt_v[9]_i_1_n_0  |                                              |                6 |              9 |         1.50 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/addr_v_0              |                                              |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG         | button_sync[0]/counter[0]_i_2_n_0      | button_sync[0]/counter[0]_i_1_n_0            |                4 |             16 |         4.00 |
 |  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/addr_v_0              | SD_card/m_sdcard/addr_v[25]_i_1_n_0          |                4 |             20 |         5.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/ram_addr_x                     | reset_IBUF                                   |                7 |             25 |         3.57 |
-|  clk_IBUF_BUFG         |                                        | counter[0]_i_1_n_0                           |                8 |             32 |         4.00 |
-|  clk_IBUF_BUFG         |                                        | reset_IBUF                                   |               12 |             36 |         3.00 |
-|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/tx_v[39]_i_1_n_0      |                                              |               16 |             39 |         2.44 |
+|  clk_wiz/inst/clk_out1 | SD_card/ram_addr_x                     | button_sync[0]/q_reg_0                       |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG         |                                        | button_sync[0]/q_reg_1                       |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG         |                                        | button_sync[0]/q_reg_0                       |               11 |             35 |         3.18 |
+|  clk_wiz/inst/clk_out1 | SD_card/m_sdcard/tx_v[39]_i_1_n_0      |                                              |               14 |             39 |         2.79 |
 +------------------------+----------------------------------------+----------------------------------------------+------------------+----------------+--------------+
 
 

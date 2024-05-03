@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri May  3 01:08:11 2024
+| Date             : Fri May  3 02:56:10 2024
 | Host             : TRON running 64-bit major release  (build 9200)
 | Command          : report_power -file audio_read_playback_top_power_routed.rpt -pb audio_read_playback_top_power_summary_routed.pb -rpx audio_read_playback_top_power_routed.rpx
 | Design           : audio_read_playback_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.189        |
+| Total On-Chip Power (W)  | 0.186        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.114        |
+| Dynamic (W)              | 0.112        |
 | Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 4.9          |
 | Max Ambient (C)          | 84.1         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      711 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      315 |     32600 |            0.97 |
-|   CARRY4       |    <0.001 |       31 |      8150 |            0.38 |
-|   Register     |    <0.001 |      270 |     65200 |            0.41 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |    <0.001 |      605 |       --- |             --- |
+| Slice Logic    |    <0.001 |      745 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      320 |     32600 |            0.98 |
+|   CARRY4       |    <0.001 |       35 |      8150 |            0.43 |
+|   Register     |    <0.001 |      289 |     65200 |            0.44 |
+|   Others       |     0.000 |       14 |       --- |             --- |
+| Signals        |    <0.001 |      631 |       --- |             --- |
 | MMCM           |     0.106 |        1 |         5 |           20.00 |
-| I/O            |     0.005 |       30 |       210 |           14.29 |
+| I/O            |     0.003 |       30 |       210 |           14.29 |
 | Static Power   |     0.074 |          |           |                 |
-| Total          |     0.189 |          |           |                 |
+| Total          |     0.186 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 | Vccint    |       1.000 |     0.013 |       0.003 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.059 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
-| Vcco25    |       2.500 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -141,8 +141,7 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| audio_read_playback_top |     0.114 |
-|   SD_card               |     0.001 |
+| audio_read_playback_top |     0.112 |
 |   clk_wiz               |     0.106 |
 |     inst                |     0.106 |
 +-------------------------+-----------+

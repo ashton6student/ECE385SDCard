@@ -22,7 +22,9 @@
 
 module audio_read_playback_top(
     input logic clk,
-    input logic reset,
+    input logic reset_raw,
+    input logic run_i,
+    input logic continue_i,
     
 //    output logic spkl,
 //    output logic spkr,
@@ -46,6 +48,7 @@ logic [15:0] ram_data;
 logic ram_op_begun;
 logic ram_init_error;
 logic ram_init_done;
+logic reset, run_s, continue_s;
 
 logic [31:0] counter;
 logic clk2, old_clk2, take_sample;
@@ -77,6 +80,12 @@ always_ff @(posedge clk) begin
     end
 end   
 assign ram_op_begun = take_sample;
+
+sync_debounce button_sync [2:0](
+    .clk(clk),
+    .d({run_i, continue_i, reset_raw}),
+    .q({run_s, continue_s, reset})
+);
 
 clk_wiz_0 clk_wiz(
     .clk_out1(clk_50MHz),

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date                      : Fri May  3 01:07:37 2024
+| Date                      : Fri May  3 02:55:38 2024
 | Host                      : TRON running 64-bit major release  (build 9200)
 | Command                   : report_io -file audio_read_playback_top_io_placed.rpt
 | Design                    : audio_read_playback_top
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            30 |
+|            32 |
 +---------------+
 
 
@@ -144,7 +144,7 @@ Table of Contents
 | F17        |              |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | F18        |              | High Range | IO_L16P_T2_15                | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | G1         |              | High Range | IO_L21N_T3_DQS_35            | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| G2         |              | High Range | IO_L21P_T3_DQS_35            | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| G2         | continue_i   | High Range | IO_L21P_T3_DQS_35            | INPUT       | LVCMOS25    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | G3         |              | High Range | VCCO_35                      | VCCO        |             |      35 |            |      |                     |                      |    2.50 |            |           |          |      |                  |              |                   |              |
 | G4         |              |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | G5         | hex_segB[1]  | High Range | IO_L17P_T2_35                | OUTPUT      | LVCMOS25    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
@@ -179,8 +179,8 @@ Table of Contents
 | H16        |              | High Range | IO_L22P_T3_15                | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | H17        |              | High Range | IO_L22N_T3_15                | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | H18        |              | High Range | IO_L21P_T3_DQS_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| J1         |              | High Range | IO_L23N_T3_35                | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| J2         | reset        | High Range | IO_L23P_T3_35                | INPUT       | LVCMOS25    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| J1         | run_i        | High Range | IO_L23N_T3_35                | INPUT       | LVCMOS25    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| J2         | reset_raw    | High Range | IO_L23P_T3_35                | INPUT       | LVCMOS25    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | J3         | hex_segB[2]  | High Range | IO_L19N_T3_VREF_35           | OUTPUT      | LVCMOS25    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | J4         | hex_segB[7]  | High Range | IO_L19P_T3_35                | OUTPUT      | LVCMOS25    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | J5         |              | High Range | IO_25_35                     | User IO     |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

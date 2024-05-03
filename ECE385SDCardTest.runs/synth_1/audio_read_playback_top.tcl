@@ -91,6 +91,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/design_source/HexDriver.sv}
   {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv}
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/Final Project/sync.sv}
   {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/audio_read_playback_top.sv}
 }
 read_vhdl -library xil_defaultlib {
