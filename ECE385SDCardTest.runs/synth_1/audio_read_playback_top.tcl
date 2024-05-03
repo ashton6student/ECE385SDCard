@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.tcl"
+  variable script "C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -77,34 +79,28 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.cache/wt [current_project]
-set_property parent.project_path C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+set_property webtalk.parent_dir {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.xpr} [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/design_source/HexDriver.sv
-  C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv
-  C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/audio_read_playback_top.sv
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/design_source/HexDriver.sv}
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv}
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/audio_read_playback_top.sv}
 }
 read_vhdl -library xil_defaultlib {
-  C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/Common.vhd
-  C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/SDCard.vhd
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/Common.vhd}
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/SDCard.vhd}
 }
-read_ip -quiet C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-
-read_ip -quiet c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/sources_1/ip/ila_0/ila_0.xci
-set_property used_in_synthesis false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.gen/sources_1/ip/ila_0/ila_0_ooc.xdc]
+read_ip -quiet {{C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{c:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -115,12 +111,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/constrs_1/imports/FinalFiles/Urbana.xdc
-set_property used_in_implementation false [get_files C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/constrs_1/imports/FinalFiles/Urbana.xdc]
+read_xdc {{C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/constrs_1/imports/FinalFiles/Urbana.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/constrs_1/imports/FinalFiles/Urbana.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp
+read_checkpoint -auto_incremental -incremental {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

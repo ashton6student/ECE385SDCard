@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/merli/ECE385SDCardTest/ECE385SDCardTest.runs/synth_1'
+HD_PWD='C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

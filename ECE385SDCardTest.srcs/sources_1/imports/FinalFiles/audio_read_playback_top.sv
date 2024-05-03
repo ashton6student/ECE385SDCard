@@ -51,7 +51,7 @@ logic [31:0] counter;
 logic clk2, old_clk2, take_sample;
 parameter FREQUENCY = 1;
 parameter CLK = 100000000;
-parameter MAX = (CLK / FREQUENCY) / 2;
+parameter MAX = (CLK / FREQUENCY) / 1;
 
 always_ff @(posedge clk) begin
     if(reset) begin
@@ -111,20 +111,20 @@ sdcard_init SD_card(
     HexDriver HexB (
         .clk(clk),
         .reset(reset),
-        .in({4'b0, 4'b0, 4'b0, 4'b0}),
+        .in({ram_address[15:12], ram_address[11:8], ram_address[7:4], ram_address[3:0]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );
-   ila_0 ILA (
-	.clk(clk), // input wire clk
+//   ila_0 ILA (
+//	.clk(clk), // input wire clk
 
 
-	.probe0(reset), // input wire [0:0]  probe0  
-	.probe1(SD_D0), // input wire [0:0]  probe1 
-	.probe2(SD_CLK), // input wire [0:0]  probe2 
-	.probe3(SD_DI), // input wire [0:0]  probe3 
-	.probe4(SD_CS) // input wire [0:0]  probe4
-);
+//	.probe0(reset), // input wire [0:0]  probe0  
+//	.probe1(SD_D0), // input wire [0:0]  probe1 
+//	.probe2(SD_CLK), // input wire [0:0]  probe2 
+//	.probe3(SD_DI), // input wire [0:0]  probe3 
+//	.probe4(SD_CS) // input wire [0:0]  probe4
+//);
 //pwm pwm_left(
 //    .*,
 //    .audioData(audio_left), 
