@@ -97,6 +97,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/FinalFiles/pwm.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../FinalFiles/pwm.sv"/>
+          <Attr Name="ImportTime" Val="1714431104"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/FinalFiles/sd_driver.sv">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../FinalFiles/sd_driver.sv"/>
@@ -135,16 +144,6 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../FinalFiles/audio_read_playback_top.sv"/>
           <Attr Name="ImportTime" Val="1714431103"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/FinalFiles/pwm.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../FinalFiles/pwm.sv"/>
-          <Attr Name="ImportTime" Val="1714431104"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

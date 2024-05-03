@@ -26,8 +26,8 @@ module audio_read_playback_top(
     input logic run_i,
     input logic continue_i,
     
-//    output logic spkl,
-//    output logic spkr,
+    output logic SPKL,
+    output logic SPKR,
     
     input  logic SD_D0,
     output logic SD_CLK,
@@ -49,12 +49,17 @@ logic ram_op_begun;
 logic ram_init_error;
 logic ram_init_done;
 logic reset, run_s, continue_s;
+logic [7:0] audio_left, audio_right;
+logic song_data_left, song_data_right;
+
+assign SPKL = song_data_left;
+assign SPKR = song_data_right;
 
 logic [31:0] counter;
 logic clk2, old_clk2, take_sample;
-parameter FREQUENCY = 1;
+parameter FREQUENCY = 44100;
 parameter CLK = 100000000;
-parameter MAX = (CLK / FREQUENCY) / 1;
+parameter MAX = (CLK / FREQUENCY) / 2;
 
 always_ff @(posedge clk) begin
     if(reset) begin
@@ -63,6 +68,8 @@ always_ff @(posedge clk) begin
     end else begin
         if(counter > MAX) begin
             clk2 <= ~clk2;
+            audio_left <= ram_data[15:8];
+            audio_right <= ram_data[7:0];
             counter <= 0;
         end else begin
             clk2 <= clk2;
@@ -112,7 +119,7 @@ sdcard_init SD_card(
     HexDriver HexA (
         .clk(clk),
         .reset(reset),
-        .in({ram_data[15:12], ram_data[11:8], ram_data[7:4], ram_data[3:0]}),
+        .in({ram_data[15:12], {1'b0, 1'b0, 1'b0, ram_address[24]}, ram_address[23:20], ram_address[19:16]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -134,17 +141,20 @@ sdcard_init SD_card(
 //	.probe3(SD_DI), // input wire [0:0]  probe3 
 //	.probe4(SD_CS) // input wire [0:0]  probe4
 //);
-//pwm pwm_left(
-//    .*,
-//    .audioData(audio_left), 
-//    .pwmOut(song_data_left)
-//);
 
-//pwm pwm_right(
-//    .*, 
-//    .audioData(audio_right),
-//    .pwmOut(song_data_right)
-//);
+pwm pwm_left(
+    .clk(clk),
+    .reset(reset),
+    .audioData(), 
+    .pwmOut(song_data_left)
+);
+
+pwm pwm_right(
+    .clk(clk),
+    .reset(reset), 
+    .audioData(),
+    .pwmOut(song_data_right)
+);
     
     
     

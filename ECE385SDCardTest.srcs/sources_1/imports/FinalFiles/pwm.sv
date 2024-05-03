@@ -24,23 +24,23 @@ module pwm
 (
 input logic clk,                    //Clock
 input logic reset,                  //Reset
-input logic [7:0] audioData,        //Receive waveform data
+output logic [7:0] audioData,        //Receive waveform data
 output logic pwmOut                 //Output single bit of duty cycle
 );
 
 logic [7:0] counter, counterNext;
-logic [15:0] clk_counter;           //Internal logic for controlling
+logic [31:0] clk_counter;            //Internal logic for controlling
 logic pwmNext;                      //the flow of the PWM
 logic new_clk;
 
 //Hard-coding audioData
-//always_comb begin
-//    if (new_clk == 1)begin
-//        audioData = 8'hff;
-//    end else begin
-//        audioData = 8'h00;
-//    end
-//end
+always_comb begin
+    if (new_clk == 1)begin
+        audioData = 8'hff;
+    end else begin
+        audioData = 8'h00;
+    end
+end
 
 //Clock Divider
 always_ff @(posedge clk) begin

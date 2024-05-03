@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri May  3 02:01:54 2024
-# Process ID: 21280
+# Start of session at: Fri May  3 03:12:32 2024
+# Process ID: 28440
 # Current directory: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9028 C:\Users\carso\OneDrive\Documents\College Documents\Spring 2024\ECE 385\Final Project\ECE385SDCard\ECE385SDCardTest.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent764 C:\Users\carso\OneDrive\Documents\College Documents\Spring 2024\ECE 385\Final Project\ECE385SDCard\ECE385SDCardTest.xpr
 # Log file: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/vivado.log
 # Journal file: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard\vivado.jou
 # Running On: TRON, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 34118 MB
@@ -83,16 +83,15 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1146.734 ; gain = 321.508
-uupdate_compile_order -fileset sources_1import_files -norecurse {{C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/sync.sv}}
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1158.309 ; gain = 353.566
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri May  3 02:25:13 2024] Launched synth_1...
+[Fri May  3 04:22:07 2024] Launched synth_1...
 Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
-[Fri May  3 02:25:13 2024] Launched impl_1...
+[Fri May  3 04:22:07 2024] Launched impl_1...
 Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
@@ -117,83 +116,10 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1193.574 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1183.695 ; gain = 1.652
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
-open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 3360.730 ; gain = 2167.156
-set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
-current_hw_device [get_hw_devices xc7s50_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
-INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
-program_hw_devices [get_hw_devices xc7s50_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
-INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
-program_hw_devices [get_hw_devices xc7s50_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
-INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
-program_hw_devices [get_hw_devices xc7s50_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
-INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
-set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
-program_hw_devices [get_hw_devices xc7s50_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
-INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri May  3 02:34:24 2024] Launched synth_1...
-Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
-[Fri May  3 02:34:24 2024] Launched impl_1...
-Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri May  3 02:47:49 2024] Launched synth_1...
-Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
-[Fri May  3 02:47:49 2024] Launched impl_1...
-Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2022.2
-  **** Build date : Oct 14 2022 at 05:18:10
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2022.2.0
-  ****** Build date   : Oct 04 2022-18:25:37
-    **** Build number : 2022.2.1664925937
-      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3411.371 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+open_hw_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3348.336 ; gain = 2164.641
 set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
 current_hw_device [get_hw_devices xc7s50_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
@@ -213,12 +139,50 @@ INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
 INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3419.336 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
 reset_run synth_1
 INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri May  3 02:53:50 2024] Launched synth_1...
+[Fri May  3 05:07:39 2024] Launched synth_1...
 Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
-[Fri May  3 02:53:50 2024] Launched impl_1...
+[Fri May  3 05:07:39 2024] Launched impl_1...
 Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
@@ -243,7 +207,7 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3411.371 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3419.336 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
 set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
@@ -256,6 +220,691 @@ set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/S
 program_hw_devices [get_hw_devices xc7s50_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 05:45:35 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 05:45:35 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3422.832 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 05:50:45 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 05:50:45 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3422.832 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 05:56:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 05:56:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3428.086 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 06:06:56 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 06:06:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 06:08:09 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 06:08:09 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3430.289 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 06:35:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 06:35:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3431.699 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 06:44:22 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 06:44:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3431.699 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 08:14:24 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 08:14:24 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3445.387 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3445.387 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 08:37:39 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 08:37:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 08:39:17 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 08:39:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3446.191 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 08:43:24 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 08:43:24 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3446.191 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 08:55:58 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 08:55:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3446.191 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 09:02:04 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 09:02:04 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3449.781 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 09:47:11 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 09:47:11 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3451.508 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May  3 09:52:26 2024] Launched synth_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log
+[Fri May  3 09:52:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3451.508 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+program_hw_devices [get_hw_devices xc7s50_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
+INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2022.2
+  **** Build date : Oct 14 2022 at 05:18:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.2.0
+  ****** Build date   : Oct 04 2022-18:25:37
+    **** Build number : 2022.2.1664925937
+      ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 3452.172 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A
+set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0]
+current_hw_device [get_hw_devices xc7s50_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0]
 INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 set_property PROBES.FILE {} [get_hw_devices xc7s50_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0]
@@ -266,4 +915,4 @@ refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0]
 INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 close_hw_manager
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri May  3 03:10:45 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri May  3 11:01:15 2024...
