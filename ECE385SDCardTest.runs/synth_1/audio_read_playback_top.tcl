@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -89,6 +88,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
+  {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/Final Project/FIFO_v1.sv}
   {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/design_source/HexDriver.sv}
   {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/pwm.sv}
   {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/sources_1/imports/FinalFiles/sd_driver.sv}

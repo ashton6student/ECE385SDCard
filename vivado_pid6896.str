@@ -1,0 +1,1098 @@
+/*
+
+Xilinx Vivado v2022.2 (64-bit) [Major: 2022, Minor: 2]
+SW Build: 3671981 on Fri Oct 14 05:00:03 MDT 2022
+IP Build: 3669848 on Fri Oct 14 08:30:02 MDT 2022
+
+Process ID (PID): 6896
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri May 03 11:07:22 CDT 2024
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	carso
+User home directory: C:/Users/carso
+User working directory: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.2
+RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.2/bin
+
+Vivado preferences file: C:/Users/carso/AppData/Roaming/Xilinx/Vivado/2022.2/vivado.xml
+Vivado preferences directory: C:/Users/carso/AppData/Roaming/Xilinx/Vivado/2022.2/
+Vivado layouts directory: C:/Users/carso/AppData/Roaming/Xilinx/Vivado/2022.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/vivado.log
+Vivado journal file: 	C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/vivado.jou
+Engine tmp dir: 	C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/.Xil/Vivado-6896-TRON
+
+Xilinx Environment Variables
+----------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2022.2
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent30000 "C:\Users\carso\OneDrive\Documents\College Documents\Spring 2024\ECE 385\Final Project\ECE385SDCard\ECE385SDCardTest.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2022.2/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2022.2/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2022.2/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2022.2
+RDI_INSTALLVERSION: 2022.2
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2022.2/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2022.2/tps/win64/javafx-sdk-11.0.2
+RDI_JAVAROOT: C:/Xilinx/Vivado/2022.2/tps/win64/jre11.0.11_9
+RDI_JAVA_VERSION: 11.0.11_9
+RDI_LIBDIR: C:/Xilinx/Vivado/2022.2/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2022.2\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vitis/2022.2/bin;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2022.2\tps\win64\python-3.8.3\lib
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2022.2/tps/win64
+RDI_USE_JDK11: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.2
+XILINX_SDK: C:/Xilinx/Vitis/2022.2
+XILINX_VITIS: C:/Xilinx/Vitis/2022.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.2
+_RDI_BINROOT: C:\Xilinx\Vivado\2022.2\bin
+_RDI_CWD: C:\Users\carso\OneDrive\Documents\College Documents\Spring 2024\ECE 385\Final Project\ECE385SDCard
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 692 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\carso\OneDrive\Documents\College Documents\Spring 2024\ECE 385\Final Project\ECE385SDCard\ECE385SDCardTest.xpr. Version: Vivado v2022.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard' 
+// HMemoryUtils.trashcanNow. Engine heap size: 692 MB. GUI used memory: 61 MB. Current time: 5/3/24, 11:07:23 AM CDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+97957kb) [00:00:35]
+// [Engine Memory]: 951 MB (+845978kb) [00:00:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  5207 ms.
+// Tcl Message: open_project {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'. 
+// [GUI Memory]: 115 MB (+15237kb) [00:00:38]
+// [Engine Memory]: 1,014 MB (+15764kb) [00:00:38]
+// [GUI Memory]: 122 MB (+1277kb) [00:00:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,014 MB. GUI used memory: 66 MB. Current time: 5/3/24, 11:07:40 AM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1195 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:20 . Memory (MB): peak = 1143.109 ; gain = 355.379 
+// Project name: ECE385SDCardTest; location: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard; part: xc7s50csga324-1
+dismissDialog("Open Project"); // bq
+// [Engine Memory]: 1,067 MB (+2154kb) [00:00:42]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (audio_read_playback_top.sv) elapsed time: 0.4s
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_read_playback_top (audio_read_playback_top.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_read_playback_top (audio_read_playback_top.sv), clk_wiz : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // D - Double Click
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_read_playback_top (audio_read_playback_top.sv), pwm_left : pwm (pwm.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_read_playback_top (audio_read_playback_top.sv), pwm_left : pwm (pwm.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("pwm.sv", 42, 498); // ac
+// [GUI Memory]: 128 MB (+177kb) [00:02:26]
+selectCodeEditor("pwm.sv", 174, 460); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 1); // o
+selectCodeEditor("audio_read_playback_top.sv", 34, 514); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("audio_read_playback_top.sv", 58, 535); // ac
+selectCodeEditor("audio_read_playback_top.sv", 31, 515); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 2); // o
+selectCodeEditor("pwm.sv", 18, 512); // ac
+typeControlKey((HResource) null, "pwm.sv", 'v'); // ac
+selectCodeEditor("pwm.sv", 369, 323); // ac
+selectCodeEditor("pwm.sv", 182, 195); // ac
+selectCodeEditor("pwm.sv", 182, 195, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 215, 181); // ac
+selectCodeEditor("pwm.sv", 215, 181, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 126, 488); // ac
+selectCodeEditor("pwm.sv", 126, 488, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 221, 178); // ac
+selectCodeEditor("pwm.sv", 221, 178, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("pwm.sv", 91, 328); // ac
+selectCodeEditor("pwm.sv", 91, 328, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 36, 246); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectCodeEditor("pwm.sv", 104, 451); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("pwm.sv", 58, 346); // ac
+selectCodeEditor("pwm.sv", 214, 302); // ac
+selectCodeEditor("pwm.sv", 214, 302, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("pwm.sv", 132, 429); // ac
+selectCodeEditor("pwm.sv", 132, 429, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 56, 290); // ac
+selectCodeEditor("pwm.sv", 291, 269); // ac
+selectCodeEditor("pwm.sv", 104, 183); // ac
+selectCodeEditor("pwm.sv", 104, 183, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 97, 179); // ac
+selectCodeEditor("pwm.sv", 97, 179, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("pwm.sv", 96, 265); // ac
+selectCodeEditor("pwm.sv", 96, 265, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 206, 261); // ac
+selectCodeEditor("pwm.sv", 206, 261, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 79, 468); // ac
+selectCodeEditor("pwm.sv", 79, 468, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("pwm.sv", 1, 203); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 151, 237); // ac
+selectCodeEditor("pwm.sv", 39, 304); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 42 seconds
+selectCodeEditor("pwm.sv", 241, 137); // ac
+selectCodeEditor("pwm.sv", 241, 137, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 287, 391); // ac
+selectCodeEditor("pwm.sv", 55, 324); // ac
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 119, 433); // ac
+selectCodeEditor("pwm.sv", 119, 433, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 328, 485); // ac
+selectCodeEditor("pwm.sv", 111, 435); // ac
+selectCodeEditor("pwm.sv", 111, 435, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 2); // o
+selectCodeEditor("pwm.sv", 249, 428); // ac
+selectCodeEditor("pwm.sv", 139, 158); // ac
+selectCodeEditor("pwm.sv", 139, 158, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 1); // o
+selectCodeEditor("audio_read_playback_top.sv", 426, 312); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("audio_read_playback_top.sv", 159, 302); // ac
+selectCodeEditor("audio_read_playback_top.sv", 159, 302, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 70, 348); // ac
+selectCodeEditor("audio_read_playback_top.sv", 70, 348, false, false, false, false, true); // ac - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Urbana.xdc]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Urbana.xdc]", 15, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("Urbana.xdc", 634, 72); // ac
+selectCodeEditor("Urbana.xdc", 634, 72, false, false, false, false, true); // ac - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 1); // o
+selectCodeEditor("audio_read_playback_top.sv", 274, 383); // ac
+selectCodeEditor("audio_read_playback_top.sv", 173, 366); // ac
+selectCodeEditor("audio_read_playback_top.sv", 173, 366, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 162, 390); // ac
+selectCodeEditor("audio_read_playback_top.sv", 162, 390, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 305, 417); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Urbana.xdc", 3); // o
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 7 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri May  3 11:14:46 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 11:14:46 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 74 seconds
+dismissDialog("Synthesis Failed"); // S.a
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // R
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // f: FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // f: FALSE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 1); // o
+// Elapsed time: 11 seconds
+selectCodeEditor("audio_read_playback_top.sv", 32, 225); // ac
+selectCodeEditor("audio_read_playback_top.sv", 28, 246); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri May  3 11:16:39 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 11:16:39 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 171 seconds
+dismissDialog("Implementation Failed"); // S.a
+// Elapsed time: 14 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net pwm_left/Q[0] has multiple drivers: pwm_left/counter_reg[6]/Q, and pwm_left/counter_reg[6]__0/Q.. ]", 12); // u.d
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net pwm_left/Q[0] has multiple drivers: pwm_left/counter_reg[6]/Q, and pwm_left/counter_reg[6]__0/Q.. ]", 12); // u.d
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/constrs_1/imports/FinalFiles/Urbana.xdc:12]. ]", 6, true); // u.d - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Common 17-55];-;;-;16;-;Resolution;-;If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.;-;;-;16;-;"); // u.d
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 2); // o
+// Elapsed time: 13 seconds
+selectCodeEditor("pwm.sv", 98, 137); // ac
+selectCodeEditor("pwm.sv", 98, 137, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("pwm.sv", 36, 192); // ac
+selectCodeEditor("pwm.sv", 132, 263); // ac
+selectCodeEditor("pwm.sv", 168, 181); // ac
+selectCodeEditor("pwm.sv", 159, 139); // ac
+selectCodeEditor("pwm.sv", 167, 242); // ac
+selectCodeEditor("pwm.sv", 279, 242); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 161, 80); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May  3 11:21:12 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 11:21:12 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 140 MB (+4949kb) [00:17:56]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 293 seconds
+dismissDialog("Bitstream Generation Completed"); // S.a
+// Elapsed time: 15 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // A
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // f - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1323 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1193.750 ; gain = 0.000 
+dismissDialog("Auto Connect"); // bq
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1193.750 ; gain = 0.000 
+dismissDialog("Auto Connect"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  13781 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A 
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 3357.961 ; gain = 2164.211 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,200 MB. GUI used memory: 80 MB. Current time: 5/3/24, 11:27:38 AM CDT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 19 seconds
+dismissDialog("Auto Connect"); // bq
+// [Engine Memory]: 3,216 MB (+2197301kb) [00:20:38]
+// Elapsed time: 59 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 1); // o
+// Elapsed time: 89 seconds
+selectCodeEditor("pwm.sv", 216, 156); // ac
+selectCodeEditor("pwm.sv", 216, 156, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 136, 494); // ac
+selectCodeEditor("pwm.sv", 136, 494, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 85 seconds
+selectCodeEditor("pwm.sv", 196, 111); // ac
+selectCodeEditor("pwm.sv", 196, 111, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 199, 116); // ac
+selectCodeEditor("pwm.sv", 172, 116); // ac
+selectCodeEditor("pwm.sv", 193, 117); // ac
+selectCodeEditor("pwm.sv", 197, 115); // ac
+selectCodeEditor("pwm.sv", 170, 113); // ac
+// Elapsed time: 18 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bq
+// HMemoryUtils.trashcanNow. Engine heap size: 3,226 MB. GUI used memory: 80 MB. Current time: 5/3/24, 11:33:03 AM CDT
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 0); // D
+selectCodeEditor("pwm.sv", 121, 220); // ac
+selectCodeEditor("pwm.sv", 69, 94); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("pwm.sv", 211, 197); // ac
+selectCodeEditor("pwm.sv", 211, 197, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("pwm.sv", 133, 156); // ac
+selectCodeEditor("pwm.sv", 133, 156, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 204, 203); // ac
+selectCodeEditor("pwm.sv", 204, 203, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("pwm.sv", 182, 183); // ac
+selectCodeEditor("pwm.sv", 182, 183, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("pwm.sv", 250, 198); // ac
+selectCodeEditor("pwm.sv", 250, 198, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 145, 246); // ac
+selectCodeEditor("pwm.sv", 353, 229); // ac
+// Elapsed time: 96 seconds
+selectCodeEditor("pwm.sv", 11, 51); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 58, 261); // ac
+selectCodeEditor("pwm.sv", 58, 261); // ac
+typeControlKey(null, null, 'z');
+selectCodeEditor("pwm.sv", 6, 93); // ac
+selectCodeEditor("pwm.sv", 53, 343); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 461, 126); // ac
+selectCodeEditor("pwm.sv", 108, 136); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("pwm.sv", 111, 201); // ac
+selectCodeEditor("pwm.sv", 111, 201, false, false, false, false, true); // ac - Double Click
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri May  3 11:36:59 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 11:36:59 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bq
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 238 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 1); // o
+selectCodeEditor("audio_read_playback_top.sv", 178, 156); // ac
+selectCodeEditor("audio_read_playback_top.sv", 178, 156, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 2); // o
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1095 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // t
+dismissDialog("Open Hardware Manager"); // bq
+// Elapsed time: 12 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.2   **** Build date : Oct 14 2022 at 05:18:10     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.2.0   ****** Build date   : Oct 04 2022-18:25:37     **** Build number : 2022.2.1664925937       ** Copyright 2017-2024 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 3402.953 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/8874292302A7A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bq
+// Elapsed time: 15 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bq
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 1); // o
+selectCodeEditor("pwm.sv", 230, 11); // ac
+selectCodeEditor("pwm.sv", 230, 11, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("pwm.sv", 361, 369); // ac
+selectCodeEditor("pwm.sv", 17, 212); // ac
+selectCodeEditor("pwm.sv", 13, 199); // ac
+typeControlKey((HResource) null, "pwm.sv", 'v'); // ac
+selectCodeEditor("pwm.sv", 10, 219); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 387, 276); // ac
+selectCodeEditor("pwm.sv", 218, 219); // ac
+selectCodeEditor("pwm.sv", 218, 219, false, false, false, false, true); // ac - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 407, 395); // ac
+selectCodeEditor("pwm.sv", 141, 349); // ac
+selectCodeEditor("pwm.sv", 141, 349, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 227, 346); // ac
+selectCodeEditor("pwm.sv", 227, 346, false, false, false, false, true); // ac - Double Click
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+// [GUI Memory]: 148 MB (+1459kb) [00:36:22]
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May  3 11:43:24 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 11:43:24 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 101 seconds
+selectCodeEditor("pwm.sv", 390, 459); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("pwm.sv", 213, 409); // ac
+selectCodeEditor("pwm.sv", 213, 409, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 140, 176); // ac
+selectCodeEditor("pwm.sv", 140, 176, false, false, false, false, true); // ac - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 62 seconds
+selectCodeEditor("pwm.sv", 215, 244); // ac
+selectCodeEditor("pwm.sv", 215, 244, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("pwm.sv", 135, 219); // ac
+selectCodeEditor("pwm.sv", 135, 219, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 209, 216); // ac
+selectCodeEditor("pwm.sv", 209, 216, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 258, 258); // ac
+selectCodeEditor("pwm.sv", 145, 220); // ac
+selectCodeEditor("pwm.sv", 145, 220, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 210, 217); // ac
+selectCodeEditor("pwm.sv", 210, 217, false, false, false, false, true); // ac - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 105 seconds
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bq
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bq
+// Elapsed time: 57 seconds
+selectCodeEditor("pwm.sv", 322, 257); // ac
+selectCodeEditor("pwm.sv", 208, 216); // ac
+selectCodeEditor("pwm.sv", 208, 216, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 113, 91); // ac
+selectCodeEditor("pwm.sv", 113, 91, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 37 seconds
+selectCodeEditor("pwm.sv", 80, 425); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 142, 434); // ac
+selectCodeEditor("pwm.sv", 218, 347); // ac
+selectCodeEditor("pwm.sv", 218, 347, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 235, 346); // ac
+selectCodeEditor("pwm.sv", 58, 560); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 335, 298); // ac
+selectCodeEditor("pwm.sv", 228, 349); // ac
+selectCodeEditor("pwm.sv", 228, 349, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 86, 308); // ac
+selectCodeEditor("pwm.sv", 54, 307); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("pwm.sv", 193, 310); // ac
+selectCodeEditor("pwm.sv", 193, 310, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("pwm.sv", 267, 499); // ac
+selectCodeEditor("pwm.sv", 101, 89); // ac
+selectCodeEditor("pwm.sv", 101, 89, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("pwm.sv", 180, 346); // ac
+selectCodeEditor("pwm.sv", 180, 346, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 0); // o
+selectCodeEditor("audio_read_playback_top.sv", 96, 387); // ac
+selectCodeEditor("audio_read_playback_top.sv", 88, 241); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 180, 306); // ac
+selectCodeEditor("audio_read_playback_top.sv", 180, 306, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 415, 329); // ac
+selectCodeEditor("audio_read_playback_top.sv", 162, 266); // ac
+selectCodeEditor("audio_read_playback_top.sv", 162, 266, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 135, 241); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 132, 387); // ac
+selectCodeEditor("audio_read_playback_top.sv", 275, 351); // ac
+selectCodeEditor("audio_read_playback_top.sv", 275, 351, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 153, 340); // ac
+selectCodeEditor("audio_read_playback_top.sv", 153, 340, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 135, 391); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 419, 435); // ac
+selectCodeEditor("audio_read_playback_top.sv", 160, 243); // ac
+selectCodeEditor("audio_read_playback_top.sv", 160, 243, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("audio_read_playback_top.sv", 378, 407); // ac
+selectCodeEditor("audio_read_playback_top.sv", 378, 407); // ac
+selectCodeEditor("audio_read_playback_top.sv", 186, 117); // ac
+selectCodeEditor("audio_read_playback_top.sv", 186, 117, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 377, 282); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 21, 98); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 105, 138); // ac
+selectCodeEditor("audio_read_playback_top.sv", 2, 119); // ac
+selectCodeEditor("audio_read_playback_top.sv", 172, 117); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 482, 254); // ac
+selectCodeEditor("audio_read_playback_top.sv", 117, 117); // ac
+selectCodeEditor("audio_read_playback_top.sv", 117, 117, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 206, 278); // ac
+selectCodeEditor("audio_read_playback_top.sv", 206, 278, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 224, 30); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 128, 368); // ac
+selectCodeEditor("audio_read_playback_top.sv", 128, 368, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 128, 368); // ac
+selectCodeEditor("audio_read_playback_top.sv", 128, 368, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 143, 404); // ac
+selectCodeEditor("audio_read_playback_top.sv", 143, 404, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("audio_read_playback_top.sv", 70, 153); // ac
+selectCodeEditor("audio_read_playback_top.sv", 70, 153, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 150, 154); // ac
+selectCodeEditor("audio_read_playback_top.sv", 150, 154, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 177, 307); // ac
+selectCodeEditor("audio_read_playback_top.sv", 177, 307, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 214, 369); // ac
+selectCodeEditor("audio_read_playback_top.sv", 369, 368); // ac
+selectCodeEditor("audio_read_playback_top.sv", 511, 370); // ac
+selectCodeEditor("audio_read_playback_top.sv", 647, 368); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 581, 373); // ac
+selectCodeEditor("audio_read_playback_top.sv", 581, 373, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 498, 271); // ac
+selectCodeEditor("audio_read_playback_top.sv", 498, 271, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 438, 263); // ac
+selectCodeEditor("audio_read_playback_top.sv", 290, 264); // ac
+selectCodeEditor("audio_read_playback_top.sv", 345, 263); // ac
+selectCodeEditor("audio_read_playback_top.sv", 396, 263); // ac
+selectCodeEditor("audio_read_playback_top.sv", 441, 260); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_read_playback_top.sv", 533, 332); // ac
+selectCodeEditor("audio_read_playback_top.sv", 363, 296); // ac
+selectCodeEditor("audio_read_playback_top.sv", 281, 264); // ac
+selectCodeEditor("audio_read_playback_top.sv", 115, 265); // ac
+selectCodeEditor("audio_read_playback_top.sv", 386, 319); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May  3 11:55:09 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 11:55:09 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 320 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+// Elapsed time: 15 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 91 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bq
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pwm.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_read_playback_top.sv", 0); // o
+// HMemoryUtils.trashcanNow. Engine heap size: 3,245 MB. GUI used memory: 78 MB. Current time: 5/3/24, 12:03:04 PM CDT
+selectCodeEditor("audio_read_playback_top.sv", 320, 436); // ac
+selectCodeEditor("audio_read_playback_top.sv", 320, 436, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("audio_read_playback_top.sv", 189, 416); // ac
+selectCodeEditor("audio_read_playback_top.sv", 189, 416, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 121, 308); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 117, 137); // ac
+selectCodeEditor("audio_read_playback_top.sv", 146, 136); // ac
+selectCodeEditor("audio_read_playback_top.sv", 152, 136); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 269, 305); // ac
+selectCodeEditor("audio_read_playback_top.sv", 118, 306); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 117, 139); // ac
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 220, 156); // ac
+selectCodeEditor("audio_read_playback_top.sv", 220, 156, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'c'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 152, 452); // ac
+selectCodeEditor("audio_read_playback_top.sv", 152, 452, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 346, 450); // ac
+selectCodeEditor("audio_read_playback_top.sv", 346, 450, false, true, false, false, true); // ac - Control Key - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 506, 451); // ac
+selectCodeEditor("audio_read_playback_top.sv", 506, 451, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+selectCodeEditor("audio_read_playback_top.sv", 658, 453); // ac
+selectCodeEditor("audio_read_playback_top.sv", 658, 453, false, false, false, false, true); // ac - Double Click
+typeControlKey((HResource) null, "audio_read_playback_top.sv", 'v'); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.srcs/utils_1/imports/synth_1/audio_read_playback_top.dcp with file C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/audio_read_playback_top.dcp 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,246 MB. GUI used memory: 77 MB. Current time: 5/3/24, 12:04:04 PM CDT
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cz
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Fri May  3 12:04:05 2024] Launched synth_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/synth_1/runme.log [Fri May  3 12:04:05 2024] Launched impl_1... Run output will be captured here: C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 107 seconds
+selectCodeEditor("audio_read_playback_top.sv", 163, 182); // ac
+selectCodeEditor("audio_read_playback_top.sv", 163, 182, false, false, false, false, true); // ac - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("audio_read_playback_top.sv", 234, 200); // ac
+selectCodeEditor("audio_read_playback_top.sv", 234, 200, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("audio_read_playback_top.sv", 117, 404); // ac
+selectCodeEditor("audio_read_playback_top.sv", 117, 404, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 115, 263); // ac
+selectCodeEditor("audio_read_playback_top.sv", 115, 263, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("audio_read_playback_top.sv", 205, 156); // ac
+selectCodeEditor("audio_read_playback_top.sv", 205, 156, false, false, false, false, true); // ac - Double Click
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 126 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // S.a
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/carso/OneDrive/Documents/College Documents/Spring 2024/ECE 385/Final Project/ECE385SDCard/ECE385SDCardTest.runs/impl_1/audio_read_playback_top.bit} [get_hw_devices xc7s50_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7s50_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7s50_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7s50 (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bq
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/8874292302A7A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 30 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Close Hardware Target"); // j.a

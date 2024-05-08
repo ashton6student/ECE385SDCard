@@ -51,15 +51,21 @@ logic ram_init_done;
 logic reset, run_s, continue_s;
 logic [7:0] audio_left, audio_right;
 logic song_data_left, song_data_right;
+logic [15:0] audio_full;
 
 assign SPKL = song_data_left;
 assign SPKR = song_data_right;
 
 logic [31:0] counter;
 logic clk2, old_clk2, take_sample;
-parameter FREQUENCY = 44100;
+parameter FREQUENCY = 44500;
 parameter CLK = 100000000;
 parameter MAX = (CLK / FREQUENCY) / 2;
+
+assign audio_left = audio_full[15:8];
+assign audio_right = audio_full[7:0];
+//assign audio_left = ram_data[15:8];
+//assign audio_right = ram_data[7:0];
 
 always_ff @(posedge clk) begin
     if(reset) begin
@@ -68,8 +74,6 @@ always_ff @(posedge clk) begin
     end else begin
         if(counter > MAX) begin
             clk2 <= ~clk2;
-            audio_left <= ram_data[15:8];
-            audio_right <= ram_data[7:0];
             counter <= 0;
         end else begin
             clk2 <= clk2;
@@ -92,6 +96,17 @@ sync_debounce button_sync [2:0](
     .clk(clk),
     .d({run_i, continue_i, reset_raw}),
     .q({run_s, continue_s, reset})
+);
+
+SD_Card_FIFO FIFO(
+    .clk_SD(clk_50MHz),
+    .clk_sample(clk2),
+    .reset(reset),
+    .read_enable(ram_op_begun),
+    .SD_data(ram_data),
+    .data_out(audio_full),
+    .empty(),
+    .full()
 );
 
 clk_wiz_0 clk_wiz(
@@ -119,7 +134,7 @@ sdcard_init SD_card(
     HexDriver HexA (
         .clk(clk),
         .reset(reset),
-        .in({ram_data[15:12], {1'b0, 1'b0, 1'b0, ram_address[24]}, ram_address[23:20], ram_address[19:16]}),
+        .in({ram_address[15:12], ram_address[11:8], ram_address[7:4], ram_address[3:0]}),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -127,7 +142,7 @@ sdcard_init SD_card(
     HexDriver HexB (
         .clk(clk),
         .reset(reset),
-        .in({ram_address[15:12], ram_address[11:8], ram_address[7:4], ram_address[3:0]}),
+        .in({ram_data[15:12], ram_data[11:8], ram_data[7:4], ram_data[3:0]}),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );
@@ -145,14 +160,14 @@ sdcard_init SD_card(
 pwm pwm_left(
     .clk(clk),
     .reset(reset),
-    .audioData(), 
+    .audioData(audio_left), 
     .pwmOut(song_data_left)
 );
 
 pwm pwm_right(
     .clk(clk),
     .reset(reset), 
-    .audioData(),
+    .audioData(audio_right),
     .pwmOut(song_data_right)
 );
     

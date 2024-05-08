@@ -24,7 +24,7 @@ module pwm
 (
 input logic clk,                    //Clock
 input logic reset,                  //Reset
-output logic [7:0] audioData,        //Receive waveform data
+input logic [7:0] audioData,        //Receive waveform data
 output logic pwmOut                 //Output single bit of duty cycle
 );
 
@@ -33,28 +33,54 @@ logic [31:0] clk_counter;            //Internal logic for controlling
 logic pwmNext;                      //the flow of the PWM
 logic new_clk;
 
-//Hard-coding audioData
-always_comb begin
-    if (new_clk == 1)begin
-        audioData = 8'hff;
-    end else begin
-        audioData = 8'h00;
-    end
-end
+//logic [7:0] audioData;
 
-//Clock Divider
-always_ff @(posedge clk) begin
-    if ((clk_counter >= 64000) && (~reset))begin
-        new_clk <= ~new_clk;
-        clk_counter <= 0;
-    end else if(~reset)begin
-        new_clk <= new_clk;
-        clk_counter <= clk_counter + 1;
-    end else begin
-        new_clk <= 0;
-        clk_counter <= 0;
-    end
-end
+////Hard-coding audioData
+//always_comb begin
+//    if (new_clk == 1)begin
+//        audioData = 8'hff;
+//    end else begin
+//        audioData = 8'h00;
+//    end
+//end
+
+//parameter FREQUENCY = 781;
+//parameter CLK = 100000000;
+//parameter MAX = (CLK / FREQUENCY) / 2;
+
+////Clock Divider
+//always_ff @(posedge clk) begin
+//    if ((clk_counter >= MAX) && (~reset))begin
+//        new_clk <= ~new_clk;
+//        clk_counter <= 0;
+//    end else if(~reset)begin
+//        new_clk <= new_clk;
+//        clk_counter <= clk_counter + 1;
+//    end else begin
+//        new_clk <= 0;
+//        clk_counter <= 0;
+//    end
+//end
+
+
+
+//logic clk2;
+//logic counter2;
+
+//always_ff @(posedge clk) begin
+//    if(reset) begin
+//        counter2 <= 0;
+//        clk2 <= 1'b0;
+//    end else begin
+//        if(counter2 > MAX) begin
+//            clk2 <= ~clk2;
+//            counter2 <= 0;
+//        end else begin
+//            clk2 <= clk2;
+//            counter2 <= counter2 + 1;
+//        end
+//    end
+//end
 
 //Duty Cycle
 always_comb begin
@@ -79,25 +105,6 @@ always_ff @(posedge clk) begin
         counter <= 0;               //Reset counter in this case
     end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //New counter needed in order to expand scope
 //always_comb begin
